@@ -1,0 +1,21 @@
+<html>
+<head>
+<h2>Registration Page</h2><br>
+</head>
+<body>
+<form action = "#" method = "post">
+	 
+	{% csrf_token %}
+	
+	Roll Number : <input type='text' name="Roll Number"> <br>
+	Name : <input type = 'text' name="Name"> <br>
+
+
+	<input type = 'radio' name='stream' value='Medical' checked>Medical
+	<input type = 'radio' name='stream' value ='Non - Medical' checked>Non-Medical
+	<input type = 'radio' name='stream' value = 'Commerce' checked> Commerce
+	<input type = 'radio' name='stream' value='Humanities' checked> Humanities <br>
+        <input type="submit" value = "Submit" >
+</form>
+</body>
+</html>
